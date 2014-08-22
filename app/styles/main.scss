@@ -1,0 +1,31 @@
+body {
+	padding: 50px;
+	background: rgba(222,222,222,.1);
+	color: #434343;
+	width:60%;
+	
+	h1 {
+		color: #333333;
+	}
+}
+
+$break-small: 575px;
+$break-xsmall: 400px;
+
+.banner {
+	font-size: 35px;
+
+	@media screen and (min-width: $break-small) {
+		font-size: 35px;
+	}
+
+	img {
+		height: 100px;
+		@media screen and (min-width: $break-xsmall) {
+    		height: 150px;
+		}
+		@media screen and (min-width: $break-small) {
+    		height: 220px;
+		}		
+	}
+}
